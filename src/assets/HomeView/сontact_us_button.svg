@@ -12,10 +12,10 @@
 		</filter>
 	</defs>
 	<g filter="url(#filter_13_1994_dd)">
-		<circle id="Ellipse" cx="77.000000" cy="61.000000" r="45.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<circle id="Ellipse"  cx="77.000000" cy="61.000000" r="45.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
 	</g>
-	
-	<g id="textGroup" >
+
+	<g id="Circle" >
 	<path id="C"  d="M71.05 96.48C69.05 96.21 67.76 94.91 67.85 92.92L70.03 93.21C70 93.94 70.41 94.49 71.23 94.6C72.32 94.74 73.02 94 73.2 92.62C73.4 91.17 72.89 90.34 71.84 90.2C71.05 90.1 70.51 90.45 70.31 91.12L68.13 90.81C68.42 89.48 69.81 88.02 72.14 88.33C74.32 88.63 75.77 90.28 75.42 92.92C75.06 95.57 73.18 96.77 71.05 96.48Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
 	<path id="O" d="M61.49 93.47C59.5 92.6 58.5 90.59 59.56 88.14C60.63 85.69 62.78 85.06 64.77 85.93C66.78 86.8 67.76 88.82 66.7 91.25C65.63 93.7 63.49 94.34 61.49 93.47ZM64.02 87.66C63.03 87.23 62.19 87.72 61.61 89.03C61.04 90.35 61.25 91.3 62.24 91.73C63.23 92.16 64.07 91.68 64.65 90.36C65.22 89.04 65 88.09 64.02 87.66Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
 	<path id="N" d="M52.53 87.3L50.86 85.92L55.95 79.75L57.35 80.9L56.9 85.98L56.94 86.01L59.61 82.77L61.29 84.15L56.2 90.32L54.78 89.15L55.25 84.11L55.2 84.07L52.53 87.3Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
@@ -43,37 +43,34 @@
 	<path id="•" d="M85.85 91.76Q85.97 91.29 85.79 90.6Q85.62 89.94 85.28 89.59C85.06 89.35 84.8 89.2 84.51 89.14C84.22 89.08 83.92 89.09 83.6 89.17Q83.19 89.28 82.89 89.51Q82.84 89.55 82.79 89.59C82.57 89.79 82.41 90.04 82.33 90.36Q82.21 90.83 82.38 91.49Q82.56 92.17 82.9 92.52Q83.14 92.78 83.44 92.89Q83.55 92.94 83.67 92.96Q83.71 92.97 83.75 92.97Q84.15 93.03 84.57 92.92Q85.06 92.8 85.39 92.51C85.61 92.32 85.76 92.07 85.85 91.76Z" fill="#FDDD0A" fill-opacity="1.000000" fill-rule="evenodd"/>
 	<path id=" " d="" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
 	</g>
-	<path id="Arrow_icon" d="M72 56L83 56L83 67M83 56L72 " stroke="#FDDD0A" stroke-opacity="1.000000" stroke-width="1.500000"/>
+	<path id="Arrow_icon" d="M72 56L83 56L83 67M83 56L72 "  stroke="#FDDD0A" stroke-opacity="1.000000" stroke-width="1.500000"/>
 	
 
 
 <style>
 
-#textGroup  {
 
-animation: rotate-round 12s linear infinite;
- <!-- animation:  rotate 3s  linear 0s infinite; -->
- transform-origin: center center;
+#Circle {
+	  transform-origin: 77px 61px;
+	  animation: moveAround 20s infinite linear;
+	  
 }
-   
-		<!-- @keyframes rotate {
-  0 {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+
+@keyframes moveAround {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+<!-- @keyframes moveAround {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 } -->
-@keyframes rotate {
-    0% {transform: rotate(0deg);} 
-    <!-- 25% {transform: rotate(90deg);} -->
-    <!-- 50% {transform: rotate(180deg);} -->
-     <!-- 75% {transform: rotate(270deg);} -->
-	100% {transform: rotate(360deg);}
-}
+
 
 </style>
 </svg>
