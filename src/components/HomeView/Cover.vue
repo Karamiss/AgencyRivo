@@ -1,9 +1,7 @@
 <template>  
-        <h1>WE ARE RIVO AGENCY</h1>
+        <!-- <h1>WE ARE RIVO AGENCY</h1>
       <section class="cover">
-        <!-- <div class="cover-title"> -->
-
-        <!-- </div> -->
+       
           
     <div class="Kfau">
       <div class="we-help">
@@ -23,7 +21,28 @@
         <span>THE WORLD</span>
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <div class="grid head-description">
+    <div class="item-1">
+        <img class="cover-image-1" src="/src/assets/HomeView/preview_icon-1.png">
+        We help
+    </div>
+    
+    <div class="item-2">
+        Ideas
+        <img src="/src/assets/HomeView/preview_icon-click.png">
+    </div>
+
+    <div class="item-3">
+        <img src="/src/assets/HomeView/preview_icon-2.png">
+        Change
+    </div>
+    
+    <div class="item-4">
+        The world
+    </div>
+</div>
   
   <div class="">
   
@@ -40,62 +59,42 @@
   </template>
   
   <script setup>
-  const data = {
-    name: "about-us",
-    data() {
-      return {
-        data: [
-          {
-            title: "Hi! We are a team of professionals",
-            text: "With proven expertise in delivering effective, secured and high-quality digital solutions for various industries and digital marketing.",
-          },
-          {
-            title: "Our company",
-            text: "Offers development of different products starting from simple promo websites for individuals or companies, and finishing with complicated solutions for multiple purposes, e.g. <br><br>CRM and ERP systems, scalable web platforms, mobile applications, Internet-of-Things, etc.<br>We apply our expertise and knowledge to take your product from concept to prototype and to production.",
-          }
-        ]
-      };
-    }
-  };
+ 
   </script>
   
   <style scoped>
-  .icon-click {
-    padding: 0 0px 0 20px;
-    width: clamp(160px, 15vw, 373px);
-  }
-  img {
-    padding: 0 20px 0 0;
-      width: clamp(74px, 10vw, 168px);
-  }
-  span {
-    color: #1A1A1A;
-    font-size: clamp(60px, 15vw, 139px);
-  }
-  .Kfau {
-    box-sizing: border-box;
-    border: 1px dashed #e96004;
-    white-space: nowrap;
-  }
-  .cover {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    /* padding: 20px; */
-  }
-  h1 {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    text-align: center;
-    color: #818181;
-    font-size: 20px;
-  }
-  .scroll_wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  
-  </style>
-  
+
+
+.grid {
+  text-transform: uppercase;
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-flow: row;
+  font-weight: 400;
+}
+.grid .head-description {
+  line-height: 100%;  
+}
+.head-description>div {
+  align-items: center;
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  font-size: 14vw;
+}
+.item-1, .item-2, .item-3, .item-4 {
+  display: flex;
+  justify-content: center;
+}
+img {
+  object-fit: cover;
+  height: 12vw;
+}
+
+.scroll_wrapper {
+  display: flex;
+  justify-content: center;
+} 
+</style>
+
   
