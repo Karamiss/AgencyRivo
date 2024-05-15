@@ -11,10 +11,16 @@
           <div class="style">{{ text.title }}</div>
           <div class="small-text" v-html="text.text"></div>
         </div>
+        <div class="clutch">
+          <a href="https://clutch.co/profile/rivo-agency" rel="nofollow">
+            <img src="/src/assets/HomeView/Cluch-rating.svg" alt="Clutch">
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  </section>
+</section>
+
 
 
 </template>
@@ -58,13 +64,11 @@ export default {
   max-width: 100%;
 }
 .about-us {
-	background: #EEEEF0;
-width: 100%;
-padding-bottom: 72px;
-    padding-top: 72px;
+	background: #eeeef0;
+  width: 100%;
+  padding-bottom: 72px;
+  padding-top: 72px;
   /* margin: 0; */
-
-
 }
 .about-wrapper {
 	display: flex;
@@ -79,6 +83,7 @@ span {
 	font-size: 52px;
 	font-weight: 700;
 	font-style: normal;
+  margin-bottom: 20px;
 }
 .style {
 	text-transform: uppercase;

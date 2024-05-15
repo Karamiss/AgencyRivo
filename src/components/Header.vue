@@ -27,7 +27,9 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 5px;
-	margin: 0px 10px 0px 10px;
+	// margin: 0px 10px 0px 10px;
+	// border: thin solid black;
+
 }
 .wrap-logo {
 	flex: 1;
